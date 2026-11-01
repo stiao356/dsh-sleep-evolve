@@ -1,0 +1,26 @@
+{
+  "name": "dsh-sleep-evolve",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "睡眠进化：夜间睡眠期自动整理所有记忆卡（QQ 私聊 / 记忆卡 / B站学习记录 / B站私信），产出进化笔记、每日一句人格基质与可回滚的待确认提案。",
+  "license": "MIT",
+  "exports": {
+    ".": "./lib/index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "lib/index.js",
+    "lib/engine.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
